@@ -40,9 +40,11 @@ class MainActivity : AppCompatActivity() {
 
             val allSpacecrafts = repository.getAllSpacecrafts()
 
+/*
             val nasaSC = allSpacecrafts.filter { results ->
                 results.agency?.name == "SpaceX"
             }
+*/
 
             spacecraftAdapter.submitList(allSpacecrafts)
             Log.d("Cuenta", allSpacecrafts.size.toString())
